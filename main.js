@@ -1,4 +1,4 @@
-
+const { crawlPage } = require('./crawl')
 
 function main(){
     if (process.argv.length < 3) {
@@ -10,6 +10,7 @@ function main(){
     } else {
         console.log('proceeding')
         console.log('analyzing ' +  process.argv[2])
+        crawlPage(process.argv[2], {})
     }
   }
   
